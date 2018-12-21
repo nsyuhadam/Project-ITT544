@@ -25,17 +25,17 @@
 
    			//$this-> form_validation ->set_rules('confPassword','Confirmation Password','matches [inputPassword4]');
 
-   			$this-> form_validation->set_rules('role','Role','required');
+   			//$this-> form_validation->set_rules('role','Role','required');
 
-   			$this-> form_validation->set_rules('bookid','Book Id','required');
+   			//$this-> form_validation->set_rules('bookid','Book Id','required');
 
 
    			if($this-> form_validation ->run() == FALSE)
    			{
    				
    			$this->load->view('template/header');
-			$this->load->view('users/register');
-			$this->load->view('template/footer');
+			 $this->load->view('users/register');
+			 $this->load->view('template/footer');
 
    			}
 
@@ -162,4 +162,6 @@
 
       }
      }
+
+     
  }
